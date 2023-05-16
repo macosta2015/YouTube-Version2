@@ -18,7 +18,7 @@ export default function BasicGrid() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
-        <Grid item xs={8}>
+        <Grid item xs={6}>
           <Item>xs=8</Item>
         </Grid>
         <Grid item xs={4}>
@@ -35,14 +35,3 @@ export default function BasicGrid() {
   );
 }
 
-// const Introduction = () => {
-//   return (
-//     <div>
-//       <Avatar alt="React Avatar" src="/path/to/avatar.jpg" />
-//       <h1>Hello, React!</h1>
-//       <p>Welcome to my React app.</p>
-//     </div>
-//   );
-// };
-
-// export default Introduction;
