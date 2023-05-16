@@ -1,10 +1,10 @@
-import Introduction from './pages/introduction'; 
+import BasicGrid from './pages/introduction'; 
 
 function App() {
   return (
     <div className="App">
       Hello from App
-      <Introduction />
+      <BasicGrid />
     </div>
   );
 }
