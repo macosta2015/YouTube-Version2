@@ -4,16 +4,12 @@
     height: 100vh;
     border-radius: 10px;
     background-color: #ACE1AF;
+    
   }
 
   .father-grid{
+    padding-top: 25%;
     padding-left: 1%;
     padding-right: 1%;
   }
 
-  .centered-grid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
