@@ -23,22 +23,31 @@ export default function RowAndColumnSpacing() {
   return (
     <div className="custom-box">
       <Grid class="father-grid">
-        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-          <Grid item xs={12} sm={12} md={4} lg={3} xl={6}>
+        <Grid container className="centered-grid" 
+          rowSpacing={1} 
+          columnSpacing={{ xs: 1, sm: 2, md: 3 }} 
+          sx={{
+            justifyContent: 'center',
+            alignItems: 'center',
+            height: '100vh',
+  }}
+> 
+          <Grid item xs={12} sm={12} md={12} lg={3} xl={6}>
             <Item>
               <Typography>{message}
               </Typography>
             </Item>
           </Grid>
-          <Grid item xs={12} sm={12} md={4} lg={3} xl={6}>
+          <Grid item xs={12} sm={12} md={12} lg={3} xl={6}>
             <Item>2</Item>
           </Grid>
-          <Grid item xs={12} sm={12} md={4} lg={3} xl={6}>
+          <Grid item xs={12} sm={12} md={12} lg={3} xl={6}>
             <Item>
               <StandardImageList />
             </Item>
           </Grid>
-          <Grid item xs={12} sm={12} md={4} lg={3} xl={6} sx={{ display: { xs: 'none', md: 'block' } }}>
+          <Grid item xs={12} sm={12} md={4} lg={3} xl={6} sx={{ display: { xs: 'none', sm: 'none', xl: 'block' } }}>
+
             <Item>
               4
             </Item>
