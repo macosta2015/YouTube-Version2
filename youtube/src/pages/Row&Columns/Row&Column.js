@@ -3,8 +3,12 @@ import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 
 import './Row&Column.css'
+
+const message = `Truncation should be conditionally applicable on this long line of text
+ as this is a much longer line than what the container can support. `;
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -20,7 +24,10 @@ export default function RowAndColumnSpacing() {
     {/* <Box sx={{ width: '100%', height: '100vh', backgroundColor: 'green' }}>       */}
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         <Grid item xs={12} sm={12} md={4} lg={3} xl={6}>
-          <Item>1</Item>
+          <Item>
+            <Typography>{message}
+            </Typography>
+          </Item>
         </Grid>
         <Grid item xs={12} sm={12} md={4} lg={3} xl={6}>
           <Item>2</Item>
