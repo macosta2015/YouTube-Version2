@@ -16,21 +16,24 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function RowAndColumnSpacing() {
   return (
-    <Box sx={{ width: '100%', height: '100vh', backgroundColor: 'green' }}>      
+    <div className="custom-box">
+    {/* <Box sx={{ width: '100%', height: '100vh', backgroundColor: 'green' }}>       */}
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-        <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+        <Grid item xs={12} sm={12} md={4} lg={3} xl={6}>
           <Item>1</Item>
         </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+        <Grid item xs={12} sm={12} md={4} lg={3} xl={6}>
           <Item>2</Item>
         </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+        <Grid item xs={12} sm={12} md={4} lg={3} xl={6}>
           <Item>3</Item>
         </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+        <Grid item xs={12} sm={12} md={4} lg={3} xl={6} sx={{ display: { xs: 'none', md: 'block' } }}>
           <Item>4</Item>
         </Grid>
       </Grid>
-    </Box>
+    {/* </Box> */}
+    </div>
+
   );
 }
