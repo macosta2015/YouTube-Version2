@@ -8,7 +8,10 @@
   }
 
   .father-grid{
-    padding-top: 25%;
+    /* height: 80%; */
+    padding-top: 15%;
+    padding-bottom: 10%;
+
     padding-left: 1%;
     padding-right: 1%;
   }

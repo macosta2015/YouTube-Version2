@@ -23,7 +23,8 @@ export default function RowAndColumnSpacing() {
   return (
     <div className="grid-container">
       <Grid class="father-grid">
-        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+        {/* Rowspacing is the key to space the children 'Grid' */}
+        <Grid container rowSpacing={'15%'} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
           <Grid item xs={12} sm={12} md={4} lg={3} xl={6}>
             <Item>
               <Typography>{message}
