@@ -4,18 +4,20 @@ import ImageListItem from "@mui/material/ImageListItem";
 
 export default function StandardImageList() {
   return (
-    <ImageList sx={{ width: 'auto', height: 'auto' }} cols={'auto'} rowHeight={'auto'}>
-      {itemData.map((item) => (
-        <ImageListItem key={item.img}>
-          <img
-            src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-            srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-            alt={item.title}
-            loading="lazy"
-          />
-        </ImageListItem>
-      ))}
-    </ImageList>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <ImageList sx={{ width: '50%', height: '50%', overflow: 'auto' }} cols={'auto'} rowHeight={'100px'}>
+        {itemData.map((item) => (
+            <ImageListItem key={item.img}>
+            <img
+                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                alt={item.title}
+                loading="lazy"
+            />
+            </ImageListItem>
+        ))}
+        </ImageList>
+    </div>
   );
 }
 
