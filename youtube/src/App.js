@@ -1,5 +1,5 @@
 import BasicGrid from './pages/introduction'; 
-import RowAndColumnSpacing from './pages/Row&Column';
+import RowAndColumnSpacing from './pages/Row&Columns/Row&Column.js';
 
 function App() {
   return (
